@@ -1,34 +1,49 @@
-Tickets App - BackEnd System
+# Event Management – BackEnd System
 
-Overview
+The Tickets App is a backend system for an event management platform. 
+It allows users to register for events and enables organizers to create and manage them. 
+The application follows a clean microservices architecture for modularity and scalability.
 
-The Ticket App is a simple web application that allows:
+## Overview
 
-Users to register for events.
-Organizers to create and manage events.
-It supports event registration workflows for both attendees and event organizers.
+This project includes separate services to handle:
 
-Features
+- User registration and management
+- Event creation, update, and deletion
+- Event registration workflow (user-event linking)
 
-User registration for events
-Organizer event creation and listing
-Basic user and event management
-Clean and Micro-Service architecture
-Tech Stack
+Services communicate via REST APIs and are backed by MongoDB and PostgreSQL databases.
 
-Backend: Java , Spring Boot
-Database: MongoDB, Postgres
-RESTful APIs
-Docker
-Getting Started
+## Features
 
-Prerequisites
+- User registration and login functionality
+- Organizer event creation and management (CRUD)
+- Event listing and user registration to events
+- Clean codebase using layered architecture
+- Microservices architecture for modular deployment
+- RESTful APIs for inter-service communication
+- Docker-based setup for databases and environment isolation
 
-Java 17+
-Maven
-MongoDB and Postgres (Running in Docker)
-Setup Instructions
+## Tech Stack
 
-Clone the repository:
+- Java 17
+- Spring Boot
+- MongoDB
+- PostgreSQL
+- Docker
+- Maven
+- REST APIs
 
+## Prerequisites
+
+- Java 17 or later
+- Maven
+- Docker and Docker Compose
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/aku8tueaug/Event_Management_With_MicroServices.git
+cd Event_Management_With_MicroServices
